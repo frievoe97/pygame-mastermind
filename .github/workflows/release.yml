@@ -18,11 +18,16 @@ jobs:
       with:
         python-version: '3.12.5'
 
+    - name: Ensure pip is installed and upgraded
+      run: |
+          python -m ensurepip --upgrade  # Stellt sicher, dass pip in Python 3.12 installiert ist
+          python -m pip install --upgrade pip  # Aktualisiert pip auf die neueste Version
+
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install setuptools
-        pip install -r requirements.txt  # Optional, falls du eine requirements.txt hast
+          python -m pip install --upgrade setuptools  # Setuptools aktualisieren
+          python -m pip install numpy==1.26.4  # Kompatible numpy Version für Python 3.12
+          python -m pip install -r requirements.txt
 
     - name: Run Build Script
       run: |
