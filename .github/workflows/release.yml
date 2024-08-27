@@ -29,7 +29,7 @@ jobs:
     - name: Zip the .app file
       run: |
         cd dist
-        zip -r Mastermind.zip Mastermind
+        zip -r Mastermind.zip Mastermind.app
 
     - name: Create Release
       id: create_release
