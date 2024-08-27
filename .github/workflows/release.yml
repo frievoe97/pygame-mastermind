@@ -21,7 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install setuptools wheel
+        python -m pip install setuptools
         pip install -r requirements.txt  # Optional, falls du eine requirements.txt hast
 
     - name: Run Build Script
