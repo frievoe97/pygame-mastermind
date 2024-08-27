@@ -4,7 +4,9 @@ on:
   push:
     tags:
       - 'v*.*.*'  # Triggert auf Tags wie v1.0.0, v1.0.1, etc.
-
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
