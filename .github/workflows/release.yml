@@ -20,14 +20,17 @@ jobs:
 
     - name: Ensure pip is installed and upgraded
       run: |
-          python -m ensurepip --upgrade  # Stellt sicher, dass pip in Python 3.12 installiert ist
-          python -m pip install --upgrade pip  # Aktualisiert pip auf die neueste Version
+        python -m ensurepip --upgrade
+        python -m pip install --upgrade pip
 
-    - name: Install Dependencies
+    - name: Create Cython Constraint File
+      run: echo "Cython<3" > cython_constraint.txt
+
+    - name: Install Dependencies with Constraint
       run: |
-          python -m pip install --upgrade setuptools  # Setuptools aktualisieren
-          python -m pip install numpy==1.26.4  # Kompatible numpy Version für Python 3.12
-          python -m pip install -r requirements.txt
+        python -m pip install --upgrade setuptools  # Aktualisiert setuptools
+        PIP_CONSTRAINT=cython_constraint.txt python -m pip install numpy==1.26.4
+        PIP_CONSTRAINT=cython_constraint.txt python -m pip install -r requirements.txt
 
     - name: Run Build Script
       run: |
