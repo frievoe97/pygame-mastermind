@@ -12,7 +12,7 @@
 - [Game Modes](#game-modes)
 - [Supersuper Mode](#supersuper-mode)
 - [Network Mode](#network-mode)
-- [Build Script](#build-script)
+- [TODOs](#todos)
 - [Known Issues](#known-issues)
 - [Contact](#contact)
 
@@ -75,9 +75,14 @@ python build_script.py
 
 **Note:** Currently, the application is only available for MacOS.
 
-## Known Issues
+## TODOs
 
-- The application is currently only available for MacOS.
+- **Translate to English:** Complete the translation of any remaining text from German to English and review for consistency.
+- **Dockerize the Server:** Consider setting up the server as a Docker container to simplify deployment and improve portability.
+- **Fix MacOS Crashes:** Address and resolve the issues causing occasional crashes of the application on MacOS.
+- **Support for Windows:** Expand the application to support Windows, making it available to a broader audience.
+
+
 
 ## Contact
 
