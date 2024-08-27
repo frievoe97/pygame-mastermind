@@ -72,9 +72,9 @@ print("Spec-Datei angepasst.")
 subprocess.run(["pyinstaller", "--noconfirm", spec_file_name])
 
 # Schritt 4: Lösche den zusätzlichen Ordner im `dist`-Verzeichnis
-# dist_folder = os.path.join("dist", "Mastermind")
-# if os.path.exists(dist_folder):
-#     shutil.rmtree(dist_folder)
-#     print(f"Ordner '{dist_folder}' wurde gelöscht.")
-# else:
-#     print(f"Ordner '{dist_folder}' nicht gefunden.")
+dist_folder = os.path.join("dist", "Mastermind")
+if os.path.exists(dist_folder):
+    shutil.rmtree(dist_folder)
+    print(f"Ordner '{dist_folder}' wurde gelöscht.")
+else:
+    print(f"Ordner '{dist_folder}' nicht gefunden.")
