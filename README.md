@@ -1,5 +1,9 @@
 # Mastermind
 
+![Pygame](https://img.shields.io/badge/pygame-2.4.0-blue)
+![Python](https://img.shields.io/badge/python-3.11.9-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+
 <img width="300" alt="mastermind_2" src="https://github.com/user-attachments/assets/58020ca3-d09e-48c0-95a2-8a5db7226d73">
 <img width="300" alt="mastermind_1" src="https://github.com/user-attachments/assets/be01c40f-9db8-48ff-9e9a-a4d488a979ef">
 <img width="300" alt="mastermind_3" src="https://github.com/user-attachments/assets/88c4fe49-33fa-49b7-95cf-0209ebe6a03a">
