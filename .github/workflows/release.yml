@@ -24,12 +24,12 @@ jobs:
       run: python -m pip install -r requirements.txt
 
     - name: Run Build Script
+      run: python build_script.py  # Führt dein Build-Skript aus
+
+    - name: Zip the .app file
       run: |
-        python build_script.py  # Führt dein Build-Skript aus
-        ls -a
         cd dist
-        ls -a
-        cd ..
+        zip -r Mastermind.zip Mastermind.app      
 
     - name: Create Release
       id: create_release
