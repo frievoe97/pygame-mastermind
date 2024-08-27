@@ -16,12 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.12.5'
-
-    - name: Ensure pip is installed and upgraded
-      run: |
-        python -m ensurepip --upgrade
-        python -m pip install --upgrade pip
+        python-version: '3.11'
 
     - name: Create Cython Constraint File
       run: echo "Cython<3" > cython_constraint.txt
